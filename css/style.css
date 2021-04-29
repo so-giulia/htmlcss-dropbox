@@ -442,6 +442,10 @@ p.check{
     width:90%;
 }
 
+.askforprice{
+    width: calc(30% - 20px);
+}
+
 .askforprice .btn{
     margin:0;
 }
