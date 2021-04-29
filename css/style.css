@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    width:80%;
+    width:78%;
     margin:auto;
 }
 
@@ -190,7 +190,9 @@ header{
 .btn{
     font-family: 'Roboto', sans-serif;
     padding:10px 15px;
-    font-size:16px;
+    font-size:17px;
+    font-weight:300;
+    letter-spacing: 0.5px;
 }
 
 .jumbo .btn, main .btn{
@@ -210,6 +212,19 @@ header{
 .btn-blue a, .btn-blue a:hover, .btn-blue a:visited, .btn-blue a:focus{
     color:#fff;
     text-decoration:none;
+}
+
+.btn-clear{
+    border:1px solid #000;
+}
+
+.btn-clear:hover{
+    background-color: #f5f5f5;
+}
+
+.btn-clear a, .btn-clear a:hover, .btn-clear a:focus, .btn-clear a:visited{
+    color:#000;
+    text-decoration: none;
 }
 
 /* jumbotron */
@@ -250,6 +265,12 @@ header{
 }
 
 /* Main */
+
+main section{
+    margin-bottom:120px;
+}
+
+
 
 .radio-container{
     width:100%;
@@ -303,10 +324,6 @@ input[type="radio"]:checked {
 }
 
 /* Plans */
-
-.plans{
-    margin-bottom:120px;
-}
 
 .plan-col{
     border:1px solid lightgray;
@@ -408,9 +425,6 @@ input[type="radio"]:checked {
 .plan-col .btn{
     width:100%;
     text-align:center;
-    font-size:17px;
-    font-weight:300;
-    letter-spacing: 0.5px;
 }
 
 .trial .caption{
@@ -439,4 +453,27 @@ p.check{
 
 .full .plan-type h6{
     margin:30px 0;
+}
+
+/* Partners */
+
+.col-img{
+    width: 50%;
+    vertical-align: middle;
+
+}
+
+.col-img img{
+    width: 100%;
+}
+
+.col-txt{
+    width:40%;
+    vertical-align: middle;
+    margin-left:9%;
+}
+
+.partners-text-container .main-txt{
+    margin-top:40px;
+    width:90%;
 }
