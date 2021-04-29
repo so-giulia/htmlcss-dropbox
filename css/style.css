@@ -47,6 +47,18 @@ body{
     background-color: #000;
 }
 
+.debug .hero-col-min{
+    width:30%;
+    height:120px;
+    background-color: aqua;
+}
+
+.debug .hero-col-max{
+    width:60%;
+    height:120px;
+    background-color: blue;
+}
+
 /* header */
 
 header{
@@ -124,4 +136,22 @@ header{
 
 .btn-blue a, .btn-blue a:hover, .btn-blue a:visited, .btn-blue a:focus{
     color:#fff;
+}
+
+/* jumbotron */
+
+.jumbo{
+    padding: 150px 50px 0 50px;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:85px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 50px;
+}
+
+.hero-container{
+    position:relative;
 }
