@@ -61,9 +61,15 @@ body{
     text-decoration:underline;
 }
 
-.caption a:hover{
+.inline-link{
+    color: #000;
+    text-decoration:underline;
+}
+
+.caption a:hover, .inline-link:hover{
     text-decoration:none;
 }
+
 
 .cpt-light{
     color:grey;
@@ -83,7 +89,7 @@ h1{
 h2{
     font-size:50px;
     width:100%;
-    margin:auto;
+    margin-bottom:50px;
 }
 
 h3{
@@ -94,31 +100,12 @@ h6{
     font-size: 18px;
 }
 
-
 /* debug - delete later */
-
-/* .debug main{
-    height:1500px;
-    background-color: pink;
-    margin-bottom:120px;
-} */
 
 .debug footer{
     height:100px;
     background-color: #000;
 }
-
-/* .debug .col{
-    height:200px;
-    background-color: red;
-} */
-
-.debug .full{
-    /* height:120px; */
-    background-color: #fff;
-    margin-top:5%;
-}
-
 
 /* header */
 
@@ -270,11 +257,9 @@ main section{
     margin-bottom:120px;
 }
 
-
-
 .radio-container{
     width:100%;
-    margin:40px 0;
+    margin-bottom:50px;
 }
 
 .radiobutton{
@@ -310,7 +295,6 @@ input[type="radio"]:checked {
   border:5px solid  rgb(0, 97, 255);
 }
 
-
 .col{
     width:30%;
 }
@@ -321,6 +305,7 @@ input[type="radio"]:checked {
 
 .full{
     width:100%;
+    margin-top:5%;
 }
 
 /* Plans */
@@ -480,4 +465,18 @@ p.check{
 .partners-text-container .main-txt{
     margin-top:40px;
     width:90%;
+}
+
+/* Operations */
+
+.operations .col img{
+    width:100%;
+}
+
+.row:first-child{
+    margin-bottom:100px;
+}
+
+.row .col h3{
+    margin:30px 0;
 }
