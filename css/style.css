@@ -35,11 +35,20 @@ body{
 
 /* All txt */
 
-.main-txt{
+.main-txt, .radiobutton label{
     font-family:'Roboto', sans-serif;
     font-weight:400;
     font-size:18px;
     line-height:28px;
+}
+
+.txt-center{
+    text-align:center;
+}
+
+.radiobutton label{
+    font-weight:300;
+    vertical-align: middle;
 }
 
 .caption{
@@ -47,36 +56,51 @@ body{
     font-size:14px;
 }
 
+.caption a, .caption a:hover, .caption a:focus, .caption a:visited{
+    color: #0061FF;
+    text-decoration:underline;
+}
+
+.caption a:hover{
+    text-decoration:none;
+}
+
+.cpt-light{
+    color:grey;
+}
+
+h2, h3, h6{
+    font-family: 'Roboto', sans-serif;
+}
+
 h1{
     font-family: 'Roboto Condensed', sans-serif;
     font-size:85px;
-    font-weight: 700;
     letter-spacing: -0.5px;
     margin-bottom: 60px;
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
     font-size:50px;
-    font-weight: 700;
     width:100%;
-    letter-spacing: 0.5px;
     margin:auto;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h6{
+    font-size: 18px;
 }
 
 
 /* debug - delete later */
 
 .debug main{
-    height:600px;
+    height:1500px;
     background-color: pink;
     margin-bottom:120px;
-}
-
-.debug .radio-container{
-   height:50px;
-   margin:40px 0;
-   background-color: aqua;
 }
 
 .debug footer{
@@ -84,10 +108,10 @@ h2{
     background-color: #000;
 }
 
-.debug .col{
+/* .debug .col{
     height:200px;
     background-color: red;
-}
+} */
 
 .debug .full{
     height:120px;
@@ -229,6 +253,17 @@ header{
 
 .radio-container{
     width:100%;
+    margin:40px 0;
+}
+
+.radiobutton{
+    margin-right:2%;
+}
+
+.radiobutton input{
+    width:20px;
+    height:20px;
+    vertical-align: middle;
 }
 
 .col{
@@ -241,4 +276,119 @@ header{
 
 .full{
     width:100%;
+}
+
+/* Plans */
+
+.plan-col{
+    border:1px solid lightgray;
+    background-color: #fff;
+}
+
+.plan-top{
+    border-bottom:1px solid lightgray;
+    padding:10px 0;
+}
+
+.plan-main{
+    padding:30px;
+}
+
+.plan-type, .main-features{
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.all-features{
+    height: 300px;
+}
+
+.plan-type h6{
+    margin:15px 0;
+}
+
+.all-features h6{
+    margin-bottom:25px;
+}
+
+.ico{
+    display: block;
+    vertical-align: middle;
+}
+
+.user-ico::before, .team-ico::before,
+.folder-ico::before, .pencil-ico::before,
+.users-ico::before, .happy-ico::before, .check::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right:5px;
+}
+
+.user-ico::before{
+    background: transparent url(../img/icons/user.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.team-ico::before{
+    background: transparent url(../img/icons/team.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.folder-ico::before{
+    background: transparent url(../img/icons/folder.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.users-ico::before{
+    background: transparent url(../img/icons/users.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.pencil-ico::before{
+    background: transparent url(../img/icons/pencil.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.happy-ico::before{
+    background: transparent url(../img/icons/happy.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.check::before{
+    background: transparent url(../img/icons/check.svg) scroll no-repeat center;
+    background-size: contain;
+}
+
+.main-features .caption span, .check span{
+    display: inline-block;
+    width: 90%;
+    vertical-align: top;
+}
+
+.main-features p:nth-child(2){
+    margin:20px 0;
+}
+
+.plan-col .btn{
+    width:100%;
+    text-align:center;
+    font-size:17px;
+    font-weight:300;
+    letter-spacing: 0.5px;
+}
+
+.trial .caption{
+    margin:20px 0 30px 0;
+}
+
+.separator{
+    border-top:1px solid lightgrey;
+    width:20%;
+    margin-bottom:20px;
+}
+
+p.check{
+    margin-top: 15px;
 }
