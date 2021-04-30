@@ -56,27 +56,24 @@ body{
     font-size:14px;
 }
 
-.caption a, .caption a:hover, .caption a:focus, .caption a:visited{
+.main-txt a, .main-txt a:hover,
+.main-txt a:focus, .main-txt a:visited
+.caption a, .caption a:hover,
+.caption a:focus, .caption a:visited{
     color: #0061FF;
     text-decoration:underline;
 }
 
 .inline-link{
-    color: #000;
-    text-decoration:underline;
+    color: #000 !important;
 }
 
-.caption a:hover, .inline-link:hover{
+.main-txt a:hover, .caption a:hover, .inline-link:hover{
     text-decoration:none;
 }
 
-
 .cpt-light{
     color:grey;
-}
-
-h2, h3, h6{
-    font-family: 'Roboto', sans-serif;
 }
 
 h1{
@@ -84,6 +81,10 @@ h1{
     font-size:85px;
     letter-spacing: -0.5px;
     margin-bottom: 60px;
+}
+
+h2, h3, h6{
+    font-family: 'Roboto', sans-serif;
 }
 
 h2{
@@ -107,79 +108,74 @@ h6{
     background-color: #000;
 }
 
+.placeholder{
+    height: 500px;
+    background-color: blueviolet;
+}
+
 /* header */
 
 header{
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    color:#000;
+
     width:100%;
-    height: 80px;
+    height:80px;
+    line-height:78px;
+
     background-color: #fff;
-    border-bottom:1px solid lightgray;
-    line-height: 80px;
-    z-index: 100;
+    border-bottom:1px solid lightgrey;
 
-
-    position: fixed;
-    
-    font-family:'Roboto', sans-serif;
-} 
+    position:fixed;
+    z-index:100;
+    top:0;
+    left:0;
+}
 
 #logo{
-    background:transparent url(../img/logo.png) scroll no-repeat center;
-    background-size: contain;
     width:120px;
-    height:80px;
-    margin-left:20px;
+    vertical-align: middle;
 }
 
 /* navigation */
 
 .main-nav{
-    width:50%;
-
     font-size:18px;
     letter-spacing: 0.2px;
     font-weight:400;
 }
 
-.main-nav ul{
-    width:70%;
-}
-
 .main-nav ul li{
+    list-style:none;
     display: inline-block;
-    list-style: none;
-    margin:0 6%;
+    margin:0 20px;
 }
 
-.main-nav a, .main-nav a:hover, .main-nav a:visited, .main-nav a:focus{
+.main-nav ul li a, .main-nav ul li a:hover
+.main-nav ul li a:focus,.main-nav ul li a:visited{
     color:#000;
     text-decoration: none;
 }
 
-.main-nav ul li:nth-child(2){
-    margin:0;
+.main-nav ul li:hover{
+    border-bottom:2px solid #000;
 }
 
-.main-nav ul.fright{
-   text-align:right;
-}
-
-.main-nav .btn{
-    margin: 24px 20px 24px 0;
-    line-height: 31px;
-    padding:0 20px;
-
-    font-size:16px;
-}
+.fleft li:first-child:hover, .fright li:last-child:hover{
+    border-bottom:none;
+} 
 
 /* All buttons */
 
 .btn{
     font-family: 'Roboto', sans-serif;
-    padding:10px 15px;
     font-size:17px;
     font-weight:300;
     letter-spacing: 0.5px;
+
+    padding:8px 20px;
+    margin:40px 0 10px 0;
 }
 
 .jumbo .btn, main .btn{
@@ -479,4 +475,11 @@ p.check{
 
 .row .col h3{
     margin:30px 0;
+}
+
+/* Customers */
+
+.customers h2{
+    width: 60%;
+    margin-bottom:20px;
 }
