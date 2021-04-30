@@ -467,6 +467,11 @@ p.check{
     width:90%;
 }
 
+.txt-narrow{
+    font-family: 'Gothic A1', sans-serif;
+    letter-spacing: -0.3px;
+}
+
 /* Operations */
 
 .operations .col img{
