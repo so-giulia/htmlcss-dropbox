@@ -170,6 +170,44 @@ header{
     border-bottom:none;
 } 
 
+.dropdown{
+    position:absolute;
+    top:80px;
+    /* width:18%; */
+    display: block;
+    background-color: #fff;
+}
+
+.main-nav ul.dropdown{
+    display: none;
+    padding:20px 0;
+}
+
+.main-nav ul.dropdown li{
+    display: block;
+    margin:0;
+    padding: 0 50px 0 22px;
+    line-height:35px;
+    cursor:pointer;
+}
+
+.main-nav ul.dropdown li:hover{
+    background-color: #ebebeb;
+    border:none;
+}
+
+.main-nav ul.dropdown li a:hover,
+.main-nav ul.dropdown li a:focus,
+.main-nav ul.dropdown li a:visited
+.main-nav ul.dropdown li a{
+    color:#000;
+    text-decoration:none;
+}
+
+.dropdown-link:hover ~ ul.dropdown{
+    display: block;
+}   
+
 /* All buttons */
 
 .btn{
@@ -649,11 +687,17 @@ section.customers{
     display: none;
 }
 
+.question:hover > .expand-ico,
 .expand-ico:hover{
     transform:rotate(180deg);
 }
 
-.expand-ico:hover ~ .answer{
+.question{
+    cursor:pointer;
+}
+
+.expand-ico:hover ~ .answer,
+.question:hover > .answer{
    display: block;
    margin-top:25px;
 }
