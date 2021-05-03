@@ -173,9 +173,9 @@ header{
 .dropdown{
     position:absolute;
     top:80px;
-    /* width:18%; */
     display: block;
     background-color: #fff;
+    margin-left: -20px;
 }
 
 .main-nav ul.dropdown{
@@ -204,7 +204,7 @@ header{
     text-decoration:none;
 }
 
-.dropdown-link:hover ~ ul.dropdown{
+.dropdown-link:hover > ul.dropdown{
     display: block;
 }   
 
